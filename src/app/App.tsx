@@ -11,37 +11,36 @@ const NAV_LINKS = [
 
 const SERVICES = [
   {
-    icon: "🦷",
-    title: "General Dentistry",
-    description: "Comprehensive check-ups, cleanings, fillings, and preventive care to maintain your oral health year-round.",
+    icon: "👨‍⚕️",
+    title: "Family Medicine",
+    description:
+      "Personalized healthcare for children, adults, and seniors with a focus on prevention, wellness, and long-term health.",
   },
   {
-    icon: "✨",
-    title: "Teeth Whitening",
-    description: "Professional in-office and take-home whitening treatments for results up to 8 shades brighter.",
+    icon: "💉",
+    title: "Vaccines & Flu Shots",
+    description:
+      "Routine immunizations, seasonal flu vaccines, TB testing, and preventive care to help protect your family's health.",
   },
   {
-    icon: "🔲",
-    title: "Dental Implants",
-    description: "Permanent, natural-looking tooth replacements anchored to your jawbone for a lifetime of confidence.",
+    icon: "🫀",
+    title: "EKG & Preventive Screenings",
+    description:
+      "Comprehensive heart health evaluations, EKG testing, and preventive screenings for early detection of medical conditions.",
   },
   {
-    icon: "📐",
-    title: "Orthodontics",
-    description: "Clear aligners and traditional braces to straighten teeth discreetly at any age.",
+    icon: "🌎",
+    title: "Immigration Physical Exams",
+    description:
+      "Convenient immigration medical examinations performed according to USCIS requirements with prompt documentation.",
   },
   {
-    icon: "🛡️",
-    title: "Periodontal Care",
-    description: "Advanced gum disease treatment and maintenance protocols to protect your foundation.",
-  },
-  {
-    icon: "🔬",
-    title: "Digital X-Rays",
-    description: "Low-radiation digital imaging for precise diagnostics with 90% less radiation than conventional X-rays.",
+    icon: "📋",
+    title: "Physicals & Chronic Care",
+    description:
+      "Annual physicals, management of chronic conditions, and treatment for common illnesses to keep you and your family healthy year-round.",
   },
 ];
-
 const STATS = [
   { value: "12,400+", label: "Patients Treated" },
   { value: "18", label: "Years of Excellence" },
@@ -62,12 +61,12 @@ const TEAM = [
     bio: "A specialist in oral surgery and implantology, Dr. Chen trained at the University of Michigan and holds dual board certifications in oral and maxillofacial surgery.",
     photo: "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=400&h=480&fit=crop&auto=format",
   },
-  {
-    name: "Dr. Amara Okafor",
-    role: "Orthodontist",
-    bio: "Dr. Okafor brings precision and artistry to every case. Trained at the University of Toronto, she specializes in clear aligner therapy and complex bite correction.",
-    photo: "https://images.unsplash.com/photo-1594824476967-48c8b964273f?w=400&h=480&fit=crop&auto=format",
-  },
+  // {
+  //   name: "Dr. Amara Okafor",
+  //   role: "Orthodontist",
+  //   bio: "Dr. Okafor brings precision and artistry to every case. Trained at the University of Toronto, she specializes in clear aligner therapy and complex bite correction.",
+  //   photo: "https://images.unsplash.com/photo-1594824476967-48c8b964273f?w=400&h=480&fit=crop&auto=format",
+  // },
 ];
 
 const WHY_US = [
@@ -143,7 +142,7 @@ export default function App() {
               <span className="text-white text-xs font-bold" style={{ fontFamily: "'Outfit', sans-serif" }}>V</span>
             </div>
             <span className="font-bold text-foreground tracking-tight" style={{ fontFamily: "'Outfit', sans-serif", fontSize: "1.05rem" }}>
-              Voss <span className="text-primary">Dental</span>
+              Santa Marya <span className="text-primary">Medicine Clinic</span>
             </span>
           </a>
 
@@ -160,9 +159,9 @@ export default function App() {
           </nav>
 
           <div className="hidden md:flex items-center gap-4">
-            <a href="tel:+12125550199" className="flex items-center gap-1.5 text-sm text-muted-foreground hover:text-primary transition-colors">
+            <a href="tel:+17142369663" className="flex items-center gap-1.5 text-sm text-muted-foreground hover:text-primary transition-colors">
               <Phone size={13} />
-              (212) 555-0199
+              (714) 236-9663
             </a>
             <button
               onClick={() => scrollTo("#contact")}
@@ -273,9 +272,9 @@ export default function App() {
         <div className="absolute bottom-0 left-0 right-0 bg-white/10 backdrop-blur-md border-t border-white/10">
           <div className="max-w-7xl mx-auto px-6 py-4 grid grid-cols-3 gap-4">
             {[
-              { icon: Clock, label: "Mon–Sat 8am–7pm", sub: "Extended hours available" },
-              { icon: MapPin, label: "42 W 57th St, NYC", sub: "Near Columbus Circle" },
-              { icon: Phone, label: "(212) 555-0199", sub: "Same-day emergency line" },
+              { icon: Clock, label: "Mon–Fri 8am–5pm", sub: "Extended hours available" },
+              { icon: MapPin, label: "3400 W. Ball Rd, Suite 202", sub: "Anaheim CA, 92804" },
+              { icon: Phone, label: "(714) 236-9663", sub: "Same-day emergency line" },
             ].map(({ icon: Icon, label, sub }) => (
               <div key={label} className="flex items-center gap-3">
                 <Icon size={18} className="text-accent flex-shrink-0" />
@@ -351,11 +350,11 @@ export default function App() {
               Dentists who are also<br />genuinely good people.
             </h2>
             <p className="text-white/50 max-w-sm leading-relaxed text-sm">
-              Every clinician at Voss Dental holds advanced specialist credentials and a commitment to continuous education.
+              Every clinician at Family Medicine Clinic holds advanced specialist credentials and a commitment to continuous education.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-6">
+          {/* <div className="grid md:grid-cols-3 gap-6">
             {TEAM.map(({ name, role, bio, photo }) => (
               <div key={name} className="group">
                 <div className="overflow-hidden mb-5 bg-white/5" style={{ aspectRatio: "4/4.8" }}>
@@ -372,6 +371,40 @@ export default function App() {
                 </div>
               </div>
             ))}
+          </div> */}
+          <div className="flex flex-wrap justify-center gap-6">
+            {TEAM.map(({ name, role, bio, photo }) => (
+              <div
+                key={name}
+                className="group w-full md:w-[340px] lg:w-[360px]"
+              >
+                <div
+                  className="overflow-hidden mb-5 bg-white/5"
+                  style={{ aspectRatio: "4/4.8" }}
+                >
+                  <img
+                    src={photo}
+                    alt={name}
+                    className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500 scale-100 group-hover:scale-105"
+                  />
+                </div>
+
+                <div className="border-l-2 border-accent pl-4">
+                  <p
+                    className="text-white font-bold text-lg"
+                    style={{ fontFamily: "'Outfit', sans-serif" }}
+                  >
+                    {name}
+                  </p>
+
+                  <p className="text-accent text-sm mb-3">{role}</p>
+
+                  <p className="text-white/50 text-sm leading-relaxed">
+                    {bio}
+                  </p>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>
@@ -383,13 +416,13 @@ export default function App() {
             <div>
               <div className="flex items-center gap-2 mb-4">
                 <div className="w-6 h-px bg-accent" />
-                <span className="text-accent text-xs tracking-[0.2em] uppercase" style={{ fontFamily: "'Outfit', sans-serif" }}>Why Voss Dental</span>
+                <span className="text-accent text-xs tracking-[0.2em] uppercase" style={{ fontFamily: "'Outfit', sans-serif" }}>Why Family Medicine Clinic</span>
               </div>
               <h2 className="text-4xl font-bold text-foreground leading-tight mb-6" style={{ fontFamily: "'Outfit', sans-serif" }}>
                 A practice built around<br />your experience.
               </h2>
               <p className="text-muted-foreground leading-relaxed mb-8">
-                We designed every aspect of Voss Dental — from our operatory equipment to our scheduling system — around one question: what would make this genuinely easy for the patient?
+                We designed every aspect of Family Medicine Clinic — from our operatory equipment to our scheduling system — around one question: what would make this genuinely easy for the patient?
               </p>
               <div className="flex flex-col gap-3">
                 {["No hidden fees, ever", "All insurances processed in-house", "Online booking in under 60 seconds", "Evening and Saturday appointments available"].map((item) => (
@@ -457,7 +490,7 @@ export default function App() {
       </section>
 
       {/* APPOINTMENT */}
-      <section id="contact" className="py-24 bg-background">
+      {/* <section id="contact" className="py-24 bg-background">
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid md:grid-cols-2 gap-16">
             <div>
@@ -474,10 +507,10 @@ export default function App() {
 
               <div className="flex flex-col gap-4">
                 {[
-                  { icon: Clock, text: "Mon–Fri: 8:00 AM – 7:00 PM" },
-                  { icon: Clock, text: "Saturday: 9:00 AM – 4:00 PM" },
+                  { icon: Clock, text: "Mon–Fri: 8:00 AM – 5:00 PM" },
+                  // { icon: Clock, text: "Saturday: 9:00 AM – 4:00 PM" },
                   { icon: MapPin, text: "42 W 57th Street, Suite 800, New York, NY 10019" },
-                  { icon: Phone, text: "(212) 555-0199" },
+                  { icon: Phone, text: "(714) 236-9663" },
                 ].map(({ icon: Icon, text }) => (
                   <div key={text} className="flex items-start gap-3">
                     <Icon size={15} className="text-accent mt-0.5 flex-shrink-0" />
@@ -542,7 +575,7 @@ export default function App() {
                         value={form.phone}
                         onChange={(e) => setForm({ ...form, phone: e.target.value })}
                         className="w-full bg-input-background border border-border px-4 py-2.5 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-primary transition-colors"
-                        placeholder="(212) 000-0000"
+                        placeholder="(714) 000-0000"
                       />
                     </div>
                     <div className="col-span-2">
@@ -609,7 +642,7 @@ export default function App() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* FOOTER */}
       <footer className="bg-[#061824] py-14">
@@ -621,11 +654,11 @@ export default function App() {
                   <span className="text-white text-xs font-bold" style={{ fontFamily: "'Outfit', sans-serif" }}>V</span>
                 </div>
                 <span className="font-bold text-white tracking-tight" style={{ fontFamily: "'Outfit', sans-serif", fontSize: "1.05rem" }}>
-                  Voss <span className="text-accent">Dental</span>
+                  Family <span className="text-accent">Medicine Clinic </span>
                 </span>
               </div>
               <p className="text-white/40 text-sm leading-relaxed max-w-xs">
-                Modern, full-service dentistry in Midtown Manhattan. Accepting new patients, most insurances, and same-day emergencies.
+                Modern, full-service medical clinic in Midtown Manhattan. Accepting new patients, most insurances, and same-day emergencies.
               </p>
             </div>
             <div>
@@ -651,7 +684,7 @@ export default function App() {
           </div>
 
           <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
-            <p className="text-white/25 text-xs">© 2026 Voss Dental, PLLC · 42 W 57th Street, Suite 800, New York, NY 10019</p>
+            <p className="text-white/25 text-xs">© 2026 Family Medicine Clinic, PLLC · 3400 W. Ball Rd, Suite 202, Anaheim, CA 92804</p>
             <div className="flex gap-5">
               {["Privacy Policy", "Terms of Use", "HIPAA Notice", "Accessibility"].map((item) => (
                 <a key={item} href="#" className="text-white/25 text-xs hover:text-accent transition-colors">{item}</a>
