@@ -68,27 +68,30 @@ const TEAM = [
   //   photo: "https://images.unsplash.com/photo-1594824476967-48c8b964273f?w=400&h=480&fit=crop&auto=format",
   // },
 ];
-
 const WHY_US = [
   {
     icon: Shield,
-    title: "Pain-Free Promise",
-    description: "We use the latest anesthetic techniques and gentle protocols so comfort is never a compromise.",
+    title: "Preventive Healthcare",
+    description:
+      "We emphasize early detection, routine checkups, and preventive care to help you and your family stay healthy year-round.",
   },
   {
     icon: Award,
-    title: "Accredited Practice",
-    description: "Fully accredited by the American Dental Association and Joint Commission on Dental Accreditation.",
+    title: "Experienced Physicians",
+    description:
+      "With over 19 years of medical experience, our physicians provide compassionate, evidence-based care tailored to every patient.",
   },
   {
     icon: Zap,
-    title: "Same-Day Emergency Care",
-    description: "Dental emergencies don't wait. We reserve daily slots for urgent same-day appointments.",
+    title: "Same-Day Appointments",
+    description:
+      "We offer same-day appointments whenever possible for urgent medical concerns, helping you get the care you need without unnecessary delays.",
   },
   {
     icon: Heart,
-    title: "Anxiety-Friendly",
-    description: "From sedation options to calming environments, we make every visit a positive experience.",
+    title: "Patient-Centered Care",
+    description:
+      "We believe in building lasting relationships with our patients, providing personalized healthcare in a welcoming and comfortable environment.",
   },
 ];
 
@@ -109,7 +112,7 @@ const TESTIMONIALS = [
     name: "Sofia R.",
     location: "Hoboken, NJ",
     rating: 5,
-    text: "Switched to Voss Dental after years of unsatisfying care. The digital diagnostics alone are worth it — they caught a problem three other dentists missed. Genuinely life-changing.",
+    text: "Switched to Santa Marya Medicine Clinic after years of unsatisfying care. The digital diagnostics alone are worth it — they caught a problem three other dentists missed. Genuinely life-changing.",
   },
 ];
 
@@ -163,13 +166,13 @@ export default function App() {
               <Phone size={13} />
               (714) 236-9663
             </a>
-            <button
+            {/* <button
               onClick={() => scrollTo("#contact")}
               className="bg-primary text-primary-foreground text-sm px-5 py-2 hover:bg-primary/90 transition-colors duration-200 tracking-wide"
               style={{ fontFamily: "'Outfit', sans-serif" }}
             >
               Book Now
-            </button>
+            </button> */}
           </div>
 
           <button className="md:hidden text-foreground" onClick={() => setMenuOpen(!menuOpen)}>
@@ -184,12 +187,12 @@ export default function App() {
                 {l.label}
               </button>
             ))}
-            <button
+            {/* <button
               onClick={() => scrollTo("#contact")}
               className="bg-primary text-primary-foreground text-sm px-5 py-2.5 mt-2 hover:bg-primary/90 transition-colors"
             >
               Book Appointment
-            </button>
+            </button> */}
           </div>
         )}
       </header>
@@ -224,17 +227,17 @@ export default function App() {
               cared for.
             </h1>
             <p className="text-white/70 text-lg leading-relaxed mb-8 max-w-md">
-              Voss Dental is a modern, full-service dental clinic in the heart of Manhattan. Precision diagnostics, gentle care, and results that last.
+              Santa Marya Medicine Clinic is a modern, full-service medical practice in the heart of Manhattan. Precision diagnostics, gentle care, and results that last.
             </p>
             <div className="flex flex-col sm:flex-row gap-3">
-              <button
+              {/* <button
                 onClick={() => scrollTo("#contact")}
                 className="bg-accent text-white px-8 py-3.5 font-semibold hover:bg-accent/90 transition-colors flex items-center gap-2 justify-center"
                 style={{ fontFamily: "'Outfit', sans-serif" }}
               >
                 Book a Free Consultation
                 <ArrowRight size={16} />
-              </button>
+              </button> */}
               <button
                 onClick={() => scrollTo("#services")}
                 className="border border-white/30 text-white px-8 py-3.5 hover:bg-white/10 transition-colors"
@@ -310,11 +313,11 @@ export default function App() {
                 <span className="text-accent text-xs tracking-[0.2em] uppercase" style={{ fontFamily: "'Outfit', sans-serif" }}>What We Offer</span>
               </div>
               <h2 className="text-4xl font-bold text-foreground leading-tight" style={{ fontFamily: "'Outfit', sans-serif" }}>
-                Comprehensive dental<br />care under one roof.
+                Comprehensive medical<br />care under one roof.
               </h2>
             </div>
             <p className="text-muted-foreground max-w-sm leading-relaxed">
-              From your first check-up to complex restorations, every treatment is performed with clinical precision and genuine care.
+              From your first check-up to complex treatments, every service is performed with clinical precision and genuine care.
             </p>
           </div>
 
@@ -425,7 +428,7 @@ export default function App() {
                 We designed every aspect of Family Medicine Clinic — from our operatory equipment to our scheduling system — around one question: what would make this genuinely easy for the patient?
               </p>
               <div className="flex flex-col gap-3">
-                {["No hidden fees, ever", "All insurances processed in-house", "Online booking in under 60 seconds", "Evening and Saturday appointments available"].map((item) => (
+                {["No hidden fees, ever", "All insurances processed in-house"].map((item) => (
                   <div key={item} className="flex items-center gap-3">
                     <CheckCircle size={16} className="text-accent flex-shrink-0" />
                     <span className="text-foreground text-sm">{item}</span>
@@ -643,7 +646,101 @@ export default function App() {
           </div>
         </div>
       </section> */}
+{/* FIND US */}
+<section id="location" className="py-24 bg-background">
+  <div className="max-w-7xl mx-auto px-6">
+    <div className="grid lg:grid-cols-2 gap-16 items-center">
 
+      {/* Left */}
+      <div>
+        <div className="flex items-center gap-2 mb-4">
+          <div className="w-6 h-px bg-accent" />
+          <span
+            className="text-accent text-xs tracking-[0.2em] uppercase"
+            style={{ fontFamily: "'Outfit', sans-serif" }}
+          >
+            Find Us
+          </span>
+        </div>
+
+        <h2
+          className="text-4xl font-bold text-foreground mb-6"
+          style={{ fontFamily: "'Outfit', sans-serif" }}
+        >
+          Visit Santa Marya<br />
+          Family Medicine Clinic
+        </h2>
+
+        <p className="text-muted-foreground leading-relaxed mb-8">
+          Conveniently located in Anaheim, our clinic provides comprehensive
+          family healthcare in a welcoming and comfortable environment.
+        </p>
+
+        <div className="space-y-5">
+
+          <div className="flex gap-4">
+            <MapPin className="text-accent mt-1" size={20} />
+            <div>
+              <h4 className="font-semibold text-foreground">Address</h4>
+              <p className="text-muted-foreground">
+                3400 W. Ball Rd, Suite 202<br />
+                Anaheim, CA 92804
+              </p>
+            </div>
+          </div>
+
+          <div className="flex gap-4">
+            <Phone className="text-accent mt-1" size={20} />
+            <div>
+              <h4 className="font-semibold text-foreground">Phone</h4>
+              <p className="text-muted-foreground">
+                +1 (714) 236-9663
+              </p>
+            </div>
+          </div>
+
+          <div className="flex gap-4">
+            <Clock className="text-accent mt-1" size={20} />
+            <div>
+              <h4 className="font-semibold text-foreground">Office Hours</h4>
+              <p className="text-muted-foreground">
+                Monday – Friday: 8:00 AM – 5:00 PM
+                <br />
+                Saturday & Sunday: Closed
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+        <a
+          href="https://maps.google.com/?q=3400+W+Ball+Rd+Suite+202+Anaheim+CA+92804"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-2 mt-8 bg-primary text-primary-foreground px-6 py-3 hover:bg-primary/90 transition-colors"
+          style={{ fontFamily: "'Outfit', sans-serif" }}
+        >
+          Get Directions
+          <ArrowRight size={18} />
+        </a>
+      </div>
+
+      {/* Right */}
+      <div className="rounded-xl overflow-hidden border border-border shadow-lg">
+        <iframe
+          title="Clinic Location"
+          src="https://www.google.com/maps?q=3400+W+Ball+Rd+Suite+202+Anaheim+CA+92804&output=embed"
+          width="100%"
+          height="500"
+          style={{ border: 0 }}
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+        />
+      </div>
+
+    </div>
+  </div>
+</section>
       {/* FOOTER */}
       <footer className="bg-[#061824] py-14">
         <div className="max-w-7xl mx-auto px-6">
